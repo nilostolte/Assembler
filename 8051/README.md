@@ -1,6 +1,6 @@
 # Intel 8051 Assembler Directory
 
-In this directory I keep the basic tools for development in 8085 on a Windows 64 environement. I also keep a program I devised 40 years ago but that I never had an opportunity to develop. Finally, now I was able to implement it using the tools shown here. This program is given as an example how to use the tools.
+In this directory I keep the basic tools for development in 8051 on a Windows 64 environement. I also keep a program I devised 40 years ago but that I never had an opportunity to develop. Finally, now I was able to implement it using the tools shown here. This program is given as an example how to use the tools.
 
 ## Development Tools
 
@@ -54,8 +54,24 @@ oh hexasc.obj
 
 Copy hexasc.hex to the same directory where **edsim51di** is stored.
 
-Once **edsim51di** is running, one loads the program in this way:
+Once **edsim51di** is running, one loads the program by clicking in 1, 2, and 3:
 
+<img src="https://github.com/user-attachments/assets/d896c291-3b0c-4cba-83fc-c24a7ade018f" width=512><br>
+
+
+Once loaded, one click on `Assm`:
+
+<img src="https://github.com/user-attachments/assets/47cee166-5e39-4d03-9686-6edbf1c1ce09" width=512><br>
+
+Now the button `Step` shows up. The machine code also appears in `Code Memory` (if `Code Memory` doesn't appear, click on `Data Memory` to toggle between both). Notice also the editable fields `addr` and `value` in `Modify Code` (it's `Modify RAM`in `Data Memory`). The field `addr` in the image was already modified to address `0x0001` (for that, type `0x0001` instead of `0x0000` in the field `addr` and press `Enter`). `Code` shows the value `0x4A`, which is the initial immediate byte to be transformed in ASCII, initially moved to the register `R1` in the first instruction of the program:
+
+```
+MOV R1,#4AH
+```
+
+By modifying the `value` field directly in `Code Memory`, by typing the new value and pressing `Enter`, the program will convert the new value to the corresponding ASCII codes. For example, `0x4A` will be converted to the two ASCII bytes: `0x3441`, which is the number 4 followed by the letter A. In the program, register `R1` contains the input, `R0` will contain the first ASCII byte `0x34`, and the accumulator (`ACC`) will contain the second ASCII byte `0x41`. One can modify the value to `0x4B`, `0x4C`, `0x4D`, `0x4E`, `0x4F`, or any other value to test the program.
+
+<img src="https://github.com/user-attachments/assets/f076d3fb-a5b1-4d50-be1d-0029adc35f1a" width=512><br>
 
 
 
