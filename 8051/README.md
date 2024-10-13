@@ -52,7 +52,7 @@ After the `hexasc.obj` is generated, just run **oh.exe** (to generate the `hexas
 oh hexasc.obj
 ```
 
-One could have bypassed this process by loading `hexasc.asm` file directly into the simulator (since it also has an 8051 Assembler embedded). However, as far the traditional way of proceding is concerned, it is better to use the original Intel development tools, since the object code generated is absolutely the same as one would execute in a real microcontroller. This means that these tools can also be used professionally. They aren't only for educational purposes.
+One could have bypassed this process by loading `hexasc.asm` file directly into the simulator (since it also has an 8051 Assembler embedded). However, as far the traditional way of proceeding is concerned, it is better to use the original Intel development tools, since the object code generated is absolutely the same as one would execute in a real microcontroller. This means that these tools can also be used professionally. They aren't only for educational purposes.
 
 Since `hexasc.hex` has been created for this purpose, all one needs to do is to copy this file to the same directory where **edsim51di** is stored.
 
