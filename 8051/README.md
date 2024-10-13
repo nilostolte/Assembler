@@ -108,4 +108,4 @@ The code in between both conversions, merely saves the previous answer to `R0` a
 	ANL  A,#0FH
 ```
 
-To check how all this works fine, one can check any desired values besides `0x4A` as explained above and execute the program step by step clicking on the buttom step. To restart from the first instruction with new values, just press RST buttom, change the value as instructed above, and start pushing Step buttom to execute step by step.
+To check how all this works fine, one can check any desired values besides `0x4A` as explained above and execute the program step by step clicking on the buttom `Step`. To restart from the first instruction with new values, just press `RST` buttom, change the value as instructed above, and start pushing `Step` buttom to execute step by step.
