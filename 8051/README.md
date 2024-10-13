@@ -96,7 +96,7 @@ I use this here because hexadecimal digits A to F do not sequentially follow cha
 
 We notice that, in all cases of values greater than 9, we will obtain a 1 in bit 4 of the accumulator, because adding 6 to any value greater than 9 will always be 16 plus the value of all remaining bits in the lower nibble. Therefore, in these cases, the higher nible will always have 1 as its value, and only bit 4 will be set. In the cases of values less or equal to 9, the higher nibble will be zero and the bit 4 will then be also zero.
 
-Because of this fact, and since the 8051 allows copying any bit in the registers to the flags, all is needed is to copy bit 4 of the accumulator to the carry flag, and then adding `0x30` with the carry to the accumulator. In this way when the hexadecimal value to be converted is lower or equal than 9, the ASCII character will be between `0x30` and `0x39`, that is, between '0' and '9', since one adds `0x30` to values between 0 and 9. If the hexadecimal value to be converted is greater than '9', the ASCII characters will be between `0x41` and `0x46`, that is, between 'A' and 'F', since we are adding 6, the carry (in this case always 1) and `0x30`(in other words we are simply adding `0x37`) to values between A and F.
+Because of this fact, and since the 8051 allows copying any bit in the registers to the flags, all is needed is to copy bit 4 of the accumulator to the carry flag, and then adding `0x30` with the carry to the accumulator. In this way when the hexadecimal value to be converted is lower or equal than 9, the ASCII character will be between `0x30` and `0x39`, that is, between '0' and '9', since one adds `0x30` to values between 0 and 9. If the hexadecimal value to be converted is greater than 9, the ASCII characters will be between `0x41` and `0x46`, that is, between 'A' and 'F', since we are adding 6, the carry (in this case always 1) and `0x30`(in other words we are simply adding `0x37`) to values between A and F.
 
 One can see that the conversion part is repeated for the second ASCII character, since the algorithm is essentially the same. Notwithstanding, the code is so short that one can simply repeat it without any penalty in size, much less in execution time. Also of note, the code to move the proper nibbles to their designated places are as long as the conversion parts, which seems quite unexpected.
 
@@ -107,3 +107,5 @@ The code in between both conversions, merely saves the previous answer to `R0` a
 	MOV  A,R1
 	ANL  A,#0FH
 ```
+
+To check how all this works fine, one can check any desired values besides `0x4A` as explained above and execute the program step by step clicking on the buttom step. To restart from the first instruction with new values, just press RST buttom, change the value as instructed above, and start pushing Step buttom to execute step by step.
