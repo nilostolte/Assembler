@@ -1,6 +1,6 @@
 # Intel 8051 Assembler Directory
 
-In this directory I keep the basic tools for development in 8051 on a Windows 64 environment. I also keep a program I devised 40 years ago but that I never had an opportunity to implement. Finally, now I was able to run it using the tools shown here. This program is given as an example how to use the tools.
+In this directory I keep the basic tools for development in 8051 on a Windows 64 environment. I also keep a program I devised in 1985/86 but that I never had an opportunity to implement. Finally, now I was able to run it using the tools shown here. This program is given as an example how to use the tools.
 
 ## Development Tools
 
