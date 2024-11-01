@@ -14,6 +14,10 @@ Unfortunately, **asm51.exe** and **oh.exe** don't work on Windows 64. To run the
 
 1. **dosbox.exe**: DOS emulator to allow using **asm51.exe** and **oh.exe** on Windows 64 machines. The installation is easy. Just copy the contents of the zip file suplied in this repository to a directory DOSBOX (for example) in Documents for better protect your programs. Run **dosbox.exe**. It will stop saying that it was not configured. Just click to configure, and press return to accept all configurations by default it suggests. It then opens a DOS window in the C: drive. The C: drive is actually the diretctory C inside DOSBOX. Copy **asm51.exe** and **oh.exe** to DOSBOX/C.
 
+## 8051 Manual
+
+I include in this directory Intel's "[MC51 Microcontroller Family User's Manual](https://github.com/nilostolte/Assembler/blob/main/8051/8051.pdf)" for your reference, here named [8051.pdf](https://github.com/nilostolte/Assembler/blob/main/8051/8051.pdf). It gives a detailed description of the 8051 architecture as well as its Assembly instructions.
+
 ## Running asm51.exe and oh.exe
 
 Once the DOS emulator is installed in directory DOSBOX, (as suggested above), and **asm51.exe** as well as **oh.exe** are copied to DOSBOX/C, to assemble a program called `your_program.asm` (where it was previously typed your 8051 Assembly code) just type:
