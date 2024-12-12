@@ -12,7 +12,7 @@ In this directory I keep the basic tools for development in 8051 on a Windows 64
 
 Unfortunately, **asm51.exe** and **oh.exe** don't work on Windows 64. To run these programs one must use a DOS emulator, such as 
 
-1. **dosbox.exe**: DOS emulator to allow using **asm51.exe** and **oh.exe** on Windows 64 machines. The installation is easy. Just copy the contents of the zip file suplied in this repository to a directory DOSBOX (for example) in Documents for better protect your programs. Run **dosbox.exe**. It will stop saying that it was not configured. Just click to configure, and press return to accept all configurations by default it suggests. It then opens a DOS window in the C: drive. The C: drive is actually the diretctory C inside DOSBOX. Copy **asm51.exe** and **oh.exe** to DOSBOX/C.
+1. **dosbox.exe**: DOS emulator to allow using **asm51.exe** and **oh.exe** on Windows 64 machines. The installation is easy. Just copy the contents of the zip file suplied in this repository to a directory DOSBOX (for example) in Documents for better protect your programs. Run **dosbox.exe**. It will stop with a message saying that it was not configured. Just click to configure, and press return to accept all configurations by default it suggests. It then opens a DOS window in the C: drive. The C: drive is actually the diretctory C inside DOSBOX. Copy **asm51.exe** and **oh.exe** to DOSBOX/C.
 
 ## 8051 Manual
 
